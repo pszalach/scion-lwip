@@ -72,7 +72,7 @@ typedef s8_t err_t;
 #define ERR_IF         -15   /* Low-level netif error    */
 
 
-#ifdef LWIP_DEBUG
+#ifdef LWIP_DEBUG || SCION
 extern const char *lwip_strerr(err_t err);
 #else
 #define lwip_strerr(x) ""
